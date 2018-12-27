@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formulario-Lenguajes de marcas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/mobil.css">
+        <link rel="stylesheet" href="css/tablet.css">
+    </head>
+    <body>
+        <div class="contenedor">
+            <header class="item1">
+
+
+            </header>
+            <nav class="item2">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="html.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li><a href="xml.html">XML</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="formulario.html" class="seleccion">Formulario</a></li>
+                </ul>
+            </nav>
+
+            <div class="item3">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="html.html">HTML</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li><a href="xml.html">XML</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="formulario.html" class="seleccion">Formulario</a></li>
+                </ul>
+            </div>
+            <div class="item4">
+                <form action="mailto:fuerteventura@fuerteventura.com" method="post">
+                    <fieldset>
+                        <legend>Datos personales </legend>  
+                        <div>
+                            <span>Nombre </span>
+                            <input type="text"  name="nombre" autocomplete="on" maxlength="20" 
+                                   pattern="[A-Za-z]{1,20}" title="Solo deben escribirse 
+                                   letras" required/>
+                        </div>
+                        <div>
+                            <span>Apellido </span>
+                            <input type="text" name="apellido1" autocomplete="on" 
+                                   maxlength="30" pattern="[A-Za-z]{1,30}" title="Solo deben escribirse letras" required/>
+                        </div>
+                        <div>
+                            <span>E-Mail </span>
+                            <input type="email" name="E-Mail"/>
+                        </div>
+                        <div>
+                            <span>Teléfono</span>
+                            <input type="tel" name="telefono" placeholder="999-999-999" 
+                                   pattern="[0-9]{3}[-]{1}[0-9]{3}[-]{1}[0-9]{3}" title="Ejemplo 999-999-999" 
+                                   maxlength="13" required=""/>
+                        </div>
+                        <div>
+                            <span>Selecciona un idioma para contacto</span>
+                            <select name="Idioma">
+                                <option value="español" selected>Español</option>
+                                <option value="ingles">Inglés</option>
+                                <option value="aleman">Alemán</option>
+                                <option value="frances">Francés</option>
+                                <option value="italiano">Italiano</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Selecciona el grado de satisfacción de la página</p>
+                            <select size="3" name="satisfaccion" required>
+                                <option value="malo"> MALO</option>
+                                <option value="bueno"> BUENO</option>
+                                <option value="excelente">EXCELENTE</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Selecciona sexo</p>
+                            <span>Mujer</span> 
+                            <input type="radio" name="sexo" value="Mujer" required=""/>
+                            <span>Hombre</span> 
+                            <input type="radio" name="sexo" value="Hombre"/>
+                        </div>
+                        <br>
+
+                        <div> 
+                            <p>Deja aquí tu sugerencia para mejorar</p>
+                            <textarea name="texto" rows="9" cols="60"></textarea> 
+                        </div>
+                        <div style="text-align:center">
+                            <input type="submit"  value="Enviar">
+                            <input type="reset"  value="Limpiar datos">
+                        </div>
+                    </fieldset>
+                </form>
+                <div>2.2</div>
+                <div>2.3</div>
+            </div>
+
+            <footer class="item5">
+          
+            </footer>
+        </div>
+    </body>
+</html>
